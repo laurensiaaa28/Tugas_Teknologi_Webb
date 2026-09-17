@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Laurensia Vebi Simarmata</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-stone-700 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- Navbar Navigation -->
+  <nav class="bg-white/80 backdrop-blur-md border-b border-stone-200/70 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-stone-800">Lauren</h1>
+      <div class="space-x-4 text-sm md:text-base">
+        <button id="nav-beranda" onclick="switchPage('beranda')" class="text-stone-900 font-bold border-b-2 border-stone-700 pb-1 transition">Beranda</button>
+        <button id="nav-portfolio" onclick="switchPage('portfolio')" class="text-stone-600 hover:text-stone-900 font-medium transition">Portofolio Diri</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HALAMAN 1: BERANDA ================= -->
+  <main id="page-beranda" class="flex-grow block">
+    <!-- Hero Section -->
+    <section class="bg-stone-200/60 border-b border-stone-200 text-stone-800 py-20 md:py-28 px-4 text-center">
+      <div class="max-w-3xl mx-auto">
+        <span class="bg-stone-300/70 text-stone-700 text-xs font-medium px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-4">
+          Computer Science & Cybersecurity
+        </span>
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight text-stone-800">Membangun Sistem Digital yang Aman & Tangguh</h2>
+        <p class="text-lg md:text-xl text-stone-600 mb-8 leading-relaxed">
+          Haii! Ini adalah website portofolio diri aku sebagai mahasiswa Ilmu Komputer yang berfokus pada Keamanan Siber.
+        </p>
+        <div class="flex justify-center">
+          <button onclick="switchPage('portfolio')" class="bg-stone-700 text-stone-50 font-medium px-6 py-3 rounded-lg shadow-sm hover:bg-stone-800 transition">
+            Buka Halaman Portofolio Diri &rarr;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preview Ringkas -->
+    <section class="max-w-5xl mx-auto px-4 py-16 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-2xl border border-stone-200/80 shadow-sm">
+        <div>
+          <h3 class="text-2xl font-bold text-stone-800 mb-3">Sekilas Tentang Aku</h3>
+          <p class="text-stone-600 leading-relaxed mb-4">
+            Aku Laurensia Vebi Simarmata, mahasiswa Ilmu Komputer Universitas Pendidikan Ganesha (Undiksha). Memiliki minat besar pada analisis keamanan sistem, kriptografi, dan <i>ethical hacking</i>.
+          </p>
+          <button onclick="switchPage('portfolio')" class="text-stone-800 font-semibold hover:underline">Lihat profil lengkap &rarr;</button>
+        </div>
+        <div class="bg-stone-100/70 p-6 rounded-xl border border-stone-200/60 text-stone-700 space-y-3">
+          <div>
+            <h4 class="font-bold text-sm text-stone-800">🎓 Perguruan Tinggi</h4>
+            <p class="text-sm">Universitas Pendidikan Ganesha (Undiksha)</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-stone-800">📚 Program Studi</h4>
+            <p class="text-sm">Ilmu Komputer</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-stone-800">🛡️ Minat Utama</h4>
+            <p class="text-sm">Cybersecurity & Network Security</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= HALAMAN 2: PORTOFOLIO DIRI ================= -->
+  <main id="page-portfolio" class="flex-grow hidden">
+    <!-- Header Profil & Foto -->
+    <section class="bg-stone-200/60 border-b border-stone-200 text-stone-800 py-12 px-4 text-center">
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-4 inline-block">
+          <img src="foto-laurensia.jpeg" alt="Foto Laurensia Vebi Simarmata" 
+               class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-stone-200 shadow-sm mx-auto">
+        </div>
+        <h2 class="text-3xl font-extrabold text-stone-800 mb-1">Laurensia Vebi Simarmata</h2>
+        <p class="text-stone-600 font-medium text-lg">Mahasiswa Ilmu Komputer Undiksha | Cybersecurity </p>
+      </div>
+    </section>
+
+    <!-- Isi Utama Portofolio Diri -->
+    <div class="max-w-5xl mx-auto px-4 py-12 w-full space-y-10">
+      
+      <!-- Kartu Biodata -->
+      <div class="bg-white p-8 rounded-2xl border border-stone-200/80 shadow-sm">
+        <h3 class="text-2xl font-bold mb-6 text-stone-800 border-b border-stone-200 pb-2">Biodata Diri</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-stone-700">
+          <div>
+            <p class="mb-2"><span class="font-semibold text-stone-800">Nama Lengkap:</span> Laurensia Vebi Simarmata</p>
+            <p class="mb-2"><span class="font-semibold text-stone-800">Perguruan Tinggi:</span> Universitas Pendidikan Ganesha (Undiksha)</p>
+            <p class="mb-2"><span class="font-semibold text-stone-800">Program Studi:</span> Ilmu Komputer</p>
+            <p class="mb-2"><span class="font-semibold text-stone-800">NIM:</span> 2415101053</p>
+          </div>
+          <div>
+            <p class="mb-2"><span class="font-semibold text-stone-800">Fokus Area:</span> Network Security & Ethical Hacking</p>
+            <p class="mb-2"><span class="font-semibold text-stone-800">Status:</span> Mahasiswa Aktif</p>
+            <p class="mb-2"><span class="font-semibold text-stone-800">Email:</span> <a href="mailto:laurensiasimarmata5@gmail.com" class="text-stone-700 hover:underline">laurensiasimarmata5@gmail.com</a></p>
+            <p class="mb-2"><span class="font-semibold text-stone-800">Instagram:</span> <a href="https://instagram.com/lrnciaa" target="_blank" class="text-stone-700 hover:underline">@lrnciaa</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Poin Minat & Keahlian -->
+      <div>
+        <h3 class="text-2xl font-bold mb-6 text-stone-800 text-center">Fokus Keahlian Keamanan Siber</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="bg-white p-6 rounded-xl border border-stone-200/80 shadow-sm text-center">
+            <div class="text-4xl mb-3">🛡️</div>
+            <h4 class="text-lg font-bold text-stone-800 mb-2">Network & Web Security</h4>
+            <p class="text-stone-600 text-sm">Analisis kerentanan sistem web, proteksi jaringan dari serangan siber, serta penerapan standar keamanan seperti OWASP.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-stone-200/80 shadow-sm text-center">
+            <div class="text-4xl mb-3">🔑</div>
+            <h4 class="text-lg font-bold text-stone-800 mb-2">Cryptography & Data Protection</h4>
+            <p class="text-stone-600 text-sm">Penerapan enkripsi data, algoritma keamanan, manajemen kunci digital, serta pencegahan kebocoran informasi.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl border border-stone-200/80 shadow-sm text-center">
+            <div class="text-4xl mb-3">💻</div>
+            <h4 class="text-lg font-bold text-stone-800 mb-2">Ethical Hacking & Pentesting</h4>
+            <p class="text-stone-600 text-sm">Simulasi pengujian penetrasi sistem (penetration testing), audit keamanan aplikasi, dan analisa celah keamanan.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-stone-300 py-6 text-center mt-auto">
+    <p>&copy; 2026 Laurensia Vebi Simarmata.Teknologi Web.</p>
+  </footer>
+
+  <!-- Script Penukar Halaman -->
+  <script>
+    function switchPage(page) {
+      const pageBeranda = document.getElementById('page-beranda');
+      const pagePortfolio = document.getElementById('page-portfolio');
+      const navBeranda = document.getElementById('nav-beranda');
+      const navPortfolio = document.getElementById('nav-portfolio');
+
+      if (page === 'beranda') {
+        pageBeranda.classList.remove('hidden');
+        pageBeranda.classList.add('block');
+        pagePortfolio.classList.remove('block');
+        pagePortfolio.classList.add('hidden');
+
+        navBeranda.className = "text-stone-900 font-bold border-b-2 border-stone-700 pb-1 transition";
+        navPortfolio.className = "text-stone-600 hover:text-stone-900 font-medium transition";
+      } else {
+        pagePortfolio.classList.remove('hidden');
+        pagePortfolio.classList.add('block');
+        pageBeranda.classList.remove('block');
+        pageBeranda.classList.add('hidden');
+
+        navPortfolio.className = "text-stone-900 font-bold border-b-2 border-stone-700 pb-1 transition";
+        navBeranda.className = "text-stone-600 hover:text-stone-900 font-medium transition";
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
